@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono&family=Xanh+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: min-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header ul{
+    display: inline-block;
+    list-style-type: none;
+}
+header ul li{
+    display: inline;
+    height: 100%;
+}
+header ul li a{
+    text-decoration: none;
+    color: black
+}
+header ul li a:hover{
+    color: #6D6D6D;
+}
+#presentacion{
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Xanh Mono', monospace;
+    display: flex;
+}
+#presentacion .img{
+    width: 85%;
+}
+#presentacion .img img{
+    width: 100%;
+}
+#presentacion .desc{
+    height: 15%;
+    align-self: center;
+    text-align: right;
+    
+}
+#presentacion .desc h1{
+    font-size: 2em;
+}
+#presentacion .desc button{
+    outline: none;
+    border: 3px solid black;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+    margin-top: 2%;
+}
+#presentacion .desc button:hover{
+    background-color: black;
+    color: white;
+}
+#productos{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+#productos div{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: space-between;
+    font-size: 0.8em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#productos div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 30px 40px;
+}
+#productos div img{
+    width: 100%;
+    height: 50%;
+}
+.product button{
+    background-color: white;
+    border: none;
+    height: 10%;
+    font-size: 1.5em;
+    border-top: 1px solid black;
+}
+.product button:hover{
+    background-color: red;
+    color: white;
+}
