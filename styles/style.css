@@ -6,12 +6,19 @@
     box-sizing: border-box;
     font-family: 'Sono', sans-serif;
 }
+body{
+    animation: desvanecer 0.5s; 
+}
 header{
     display: flex;
     align-items: center;
     height: min-content;
     padding-left: 10%;
     padding-right: 10%;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    
 }
 header ul{
     display: inline-block;
@@ -84,7 +91,8 @@ header ul li a:hover{
     cursor: pointer;
 }
 #productos div:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 30px 40px;
+    box-shadow: black 10px 30px 40px;
+    transition: 0.5s box-shadow;
 }
 #productos div img{
     width: 100%;
@@ -100,4 +108,18 @@ header ul li a:hover{
 .product button:hover{
     background-color: red;
     color: white;
+}
+
+/*ANIMACIONES*/
+
+@keyframes desvanecer {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+@keyframes agrandar {
+    from {width: 150px;}
+    to{width: 450px;}
 }
