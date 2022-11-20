@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/registro.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1 class="h1">REGISTRATE! ES GRATIS</h1>
+        <div class="datos-generales flex">
+            <label for="name" id="nombre">NOMBRES(S)<br>
+                <input type="text" id="name" name="name">
+            </label>
+            <label for="apellidoM">APELLIDO MATERNO<br>
+                <input type="text" id="apellidoM" name="apellidoM">
+            </label>
+            <label for="apellidoP">APELLIDO PATERNO<br>
+                <input type="text" id="apellidoP" name="apellidP">
+            </label>
+            <label for="correo">INGRESA TU CORREO<br>
+                <input type="email" id="correo" name="correo">
+            </label>
+        </div>
+        <div class="usuario flex">
+            <h1 class="h1">HAY QUE CREAR TU USUARIO!</h1>
+            <label for="user" class="label">NOMBRE PARA TU USUARIO<br>
+                <input type="text" id="user" name="user" class="input">
+            </label>
+            <label for="password" class="label">CREA UNA CONTRASEÑA<br>
+                <input type="password" id="password" name="password" class="input">
+            </label>
+            <label for="passwordN" class="label">INTRODUCE NUEVAMENTE TU CONTRASEÑA<br>
+                <input type="password" id="passwordN" name="passwordN" class="input">
+            </label>
+        </div>
+        <div class="facturacion flex">
+            <h1 class="h1">INTRODUCE TUS DATOS DE FACTURACION</h1>
+            <label for="city" class="label">CIUDAD<br>
+                <input type="text" id="city" name="city" class="input">
+            </label>
+            <label for="address" class="label">CALLE
+                <input type="text" id="address" name="address" class="input">
+            </label>
+            <label for="zip" class="label">CÓDIGO POSTAL
+                <input type="text" id="zip" name="zip" class="input">
+            </label>
+        </div>
+        <div class="enviar flex">
+            <input type="checkbox" name="conditions" id="conditions">
+            <label for="conditions"><a href="" class="conditions">ACEPTO LOS TERMINOS Y CONDICIONES DE LA EMPRESA</a></label><br>
+            
+        </div>
+    </form>
+    <button id="enviar">ENVIAR</button>
+    <div class="img">
+        <p>IMAGEN DE FONDO</p>
+    </div>
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>

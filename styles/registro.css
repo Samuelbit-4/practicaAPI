@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+    font-size: 1em;
+}
+body{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    margin: 0px 2% 0px 2%;
+    gap: 2%;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#name{
+    width: 100% !important;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+#name:focus{
+    border-bottom: 2px solid red;
+    transition: 0.2s all ease-in;
+}
+.datos-generales #nombre{
+    width: 95%;
+}
+.datos-generales label{
+    width: 50%;
+    margin: 5px 0px 5px 0px;
+}
+#apellidoP{
+    gap: 2%;
+}
+.label{
+    width: 50%;
+    margin: 5px 0px 5px 0px;
+}
+.datos-generales input{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding: 5px 0px 5px 0px;
+}
+.datos-generales input:focus{
+    border-bottom: 2px solid red;
+    transition: 0.2s all ease-in;
+}
+.input{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding: 5px 0px 5px 0px;
+}
+.input:focus{
+    border-bottom: 2px solid red;
+    transition: 0.2s all ease-in;
+}
+.h1{
+    width: 100%;
+    font-size: 2em;
+}
+.usuario label{
+    width: 50%;
+}
+
+.enviar label a{
+    width: 90%;
+    text-decoration: none;
+    color: black;
+}
+.enviar label a:hover{
+    border-bottom: 1px solid black;
+}
+.enviar input[type="checkbox"]{
+    margin: 0px 2% 0px 0px;
+    border-radius: 2px;
+}
+
+.enviar input[type="submit"]{
+    border-radius: 12px;
+    border-color: black;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: white;
+    margin-top: 2%;
+}
+.enviar input[type="submit"]:hover{
+    background-color: green;
+    color: white;
+    transition: 0.2s all;
+}
+.img{
+    float: right;
+    position: sticky;
+    width: 50%;
+    background-image: url('https://images6.alphacoders.com/454/454816.jpg');
+    background-position: right;
+    background-size: cover;
+    height: 100vh;
+}

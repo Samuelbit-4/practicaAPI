@@ -8,16 +8,25 @@
     <title>TIENDA</title>
 </head>
 <body>
+    <!-- BARRA DE NAVEGACIÓN -->
     <header>
         <img src="https://cdn.worldvectorlogo.com/logos/rotorjet.svg" alt="logosvg" width="160px" height="80px">
-        <ul>
+        <ul class="opciones">
             <li><a href="">INICIO</a></li>
-            <li><a href="">CATEGORIAS</a></li>
-            <li><a href="">INICIAR SESIÓN</a></li>
-            <li><a href="">CARRITO</a></li>
+            <li id="categorias"><span>CATEGORIAS</span></li>
+            <li><a href="./pages/login.html">INICIAR SESIÓN</a></li>
+            <li style="visibility: hidden;"><a href="">CARRITO</a></li>
         </ul>
+        <section class="modal-categorias deshability">
+            <ul id="categorias-api">
+                
+            </ul>
+        </section>
     </header>
+    <!-- LISTA DE CATEGORIAS -->
+    
     <main>
+        <!-- CARTA DE PRESENTACIÓN -->
         <section id="presentacion">
             <div class="img">
                 <img src="https://mott.social/wp-content/uploads/2019/04/streetwear-1024x594.png" alt="">
@@ -29,14 +38,16 @@
             </div>
         </section>
         <section id="productos">
-
+            <!-- INSERCIÓN DE PRODUCTOS DE LA API -->
         </section>
     </main>
     <!-- PIE DE PAGINA -->
     <footer>
         
     </footer>
+    <!-- JAVASCRIPT GENERAL -->
     <script src="./js/index.js"></script>
+    <!-- ANIMACIONES -->
     <script src="./js/animation.js"></script>
 </body>
 </html>
